@@ -1,0 +1,11 @@
+services:
+  tool:
+    build: .
+    ports:
+      - 8000:8000
+      - 5173:5173
+    volumes:
+      - ./example/modules:/root/.local/share/df/modules
+      - ./example/test_data:/root/.local/share/df/workspaces/1f954eab-7d3b-4c59-acb9-c20727422ca2
+      - ./example/example_config.yaml:/root/.config/df/config.yaml
+    

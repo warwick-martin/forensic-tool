@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drone Forensic Report</title>
+    {{ head|safe }}
+</head>
+<body>
+    <h1>Drone Forensic Report</h1>
+    <ul>
+        <li>Investigator Name: <span>{{ investigator_name }}</span></li>
+        <li>Case Number: <span>{{ case_number }}</span></li>
+        <li>Evidence file: <span>{{ evidence }}</span></li>
+        <li>Investigation Start Date: <span>{{ start_date }}</span></li>
+    </ul>
+    <h2>Extracted Data:</h2>
+    <div>{{ body|safe }}</div>
+</body>
+</html>
+
+<!--<div>-->
+<!--    {{ head|safe }}-->
+<!--    <h1>Drone Forensic Report</h1>-->
+<!--    <ul>-->
+<!--        <li>Investigator Name: <span>{{ investigator_name }}</span></li>-->
+<!--        <li>Case Number: <span>{{ case_number }}</span></li>-->
+<!--        <li>Evidence file: <span>{{ evidence }}</span></li>-->
+<!--        <li>Investigation Start Date: <span>{{ start_date }}</span></li>-->
+<!--    </ul>-->
+<!--    <h2>Extracted Data:</h2>-->
+<!--    <div>{{ body|safe }}</div>-->
+<!--</div>-->
